@@ -7,7 +7,7 @@ var featurecollection = require('turf-featurecollection');
 
 test('flip', function(t) {
   // Point Geometry
-  var pt = point(1,0);
+  var pt = point([1,0]);
   var flippedPt = flip(pt.geometry);
   t.equal(flippedPt.coordinates[0], 0);
   t.equal(flippedPt.coordinates[1], 1);
@@ -16,7 +16,7 @@ test('flip', function(t) {
   t.equal(pt.geometry.coordinates[1], 0, 'does not mutate original');
 
   // Point
-  var pt2 = point(1,0);
+  var pt2 = point([1,0]);
   var flippedPt2 = flip(pt2);
 
   t.ok(flippedPt2, 'should flip a point coordinate');
@@ -48,8 +48,8 @@ test('flip', function(t) {
   t.equal(flippedPoly.geometry.coordinates[1][2][1], 0.1);
 
   // FeatureCollection
-  var pt1 = point(1,0);
-  var pt2 = point(1,0);
+  var pt1 = point([1,0]);
+  var pt2 = point([1,0]);
   var fc = featurecollection([pt1, pt2]);
   var flippedFC = flip(fc);
 
