@@ -1,14 +1,17 @@
 /**
- * Takes any GeoJSON object and flips all of its coordinates
+ * Takes a {@link GeoJSON} object of any type and flips all of its coordinates
  * from `[x, y]` to `[y, x]`.
  *
  * @module turf/flip
- * @param {GeoJSON} input
- * @returns {GeoJSON} output
+ * @param {GeoJSON} input input GeoJSON object
+ * @returns {GeoJSON} a GeoJSON object of the same type as `input` with flipped coordinates
  * @example
- * var saudiArabia = turf.point([20.56640625, 43.42100882994726]);
+ * var saudiArabia = turf.point([20.566406, 43.421008]);
+ *
  * //=saudiArabia
+ *
  * var serbia = turf.flip(saudiArabia);
+ *
  * //=serbia
  */
 module.exports = flipAny;
