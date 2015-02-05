@@ -3,6 +3,7 @@
  * from `[x, y]` to `[y, x]`.
  *
  * @module turf/flip
+ * @category misc
  * @param {GeoJSON} input input GeoJSON object
  * @returns {GeoJSON} a GeoJSON object of the same type as `input` with flipped coordinates
  * @example
