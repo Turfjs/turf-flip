@@ -34,7 +34,7 @@ test('flip', function(t) {
   t.equal(flippedLine.geometry.coordinates[1][1], 1);
 
   // Polygon
-  var poly = polygon([[[1,0], [1,0], [1,2]], [[.2,.2], [.3,.3],[.1,.2], [1,0]]]);
+  var poly = polygon([[[1,0], [1,0], [1,2],[1,0]], [[.2,.2], [.3,.3],[.1,.2], [1,0],[.2,.2]]]);
   var flippedPoly = flip(poly);
 
   t.ok(flippedPoly, 'should flip the x and ys of a polygon');
