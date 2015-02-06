@@ -21,13 +21,20 @@ from `[x, y]` to `[y, x]`.
 ### Example
 
 ```js
-var saudiArabia = turf.point([20.566406, 43.421008]);
-
-//=saudiArabia
-
-var serbia = turf.flip(saudiArabia);
+var serbia = {
+  "type": "Feature",
+  "properties": {},
+  "geometry": {
+    "type": "Point",
+    "coordinates": [20.566406, 43.421008]
+  }
+};
 
 //=serbia
+
+var saudiArabia = turf.flip(serbia);
+
+//=saudiArabia
 ```
 
 
