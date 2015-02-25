@@ -1,11 +1,11 @@
 /**
- * Takes a {@link GeoJSON} object of any type and flips all of its coordinates
+ * Takes input features and flips all of their coordinates
  * from `[x, y]` to `[y, x]`.
  *
  * @module turf/flip
  * @category misc
- * @param {GeoJSON} input input GeoJSON object
- * @returns {GeoJSON} a GeoJSON object of the same type as `input` with flipped coordinates
+ * @param {(Feature<(Point|LineString|Polygon)>|FeatureCollection<(Point|LineString|Polygon)>)} input input features
+ * @returns {(Feature<(Point|LineString|Polygon)>|FeatureCollection<(Point|LineString|Polygon)>)} a feature or set of features of the same type as `input` with flipped coordinates
  * @example
  * var serbia = {
  *   "type": "Feature",
