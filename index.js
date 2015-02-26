@@ -4,8 +4,8 @@
  *
  * @module turf/flip
  * @category misc
- * @param {(Feature<(Point|LineString|Polygon)>|FeatureCollection<(Point|LineString|Polygon)>)} input input features
- * @returns {(Feature<(Point|LineString|Polygon)>|FeatureCollection<(Point|LineString|Polygon)>)} a feature or set of features of the same type as `input` with flipped coordinates
+ * @param {(Feature|FeatureCollection)} input input features
+ * @returns {(Feature|FeatureCollection)} a feature or set of features of the same type as `input` with flipped coordinates
  * @example
  * var serbia = {
  *   "type": "Feature",
