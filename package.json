@@ -50,7 +50,7 @@
     "dox": "^0.6.1",
     "doxme": "^1.4.3",
     "eslint": "^1.10.3",
-    "eslint-config-mourner": "^1.0.1",
+    "eslint-config-mourner": "^1.0.1"
   },
   "dependencies": {
     "turf-meta": "^1.0.2"
